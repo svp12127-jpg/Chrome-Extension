@@ -4,4 +4,4 @@ function clock(){
     now.getMinutes()
 }
 setInterval(clock, 1000) // runs every 1000ms = 1 second
-updateClock() // run once immediately
+clock() // run once immediately
