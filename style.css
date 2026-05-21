@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #0d324d, #7f5a83);
+    background: linear-gradient(135deg, #0a0a0f, #1a0533, #3d1a6e, #7b2d8b, #c2185b80);
     color: white;
 }
 #clock {
