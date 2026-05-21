@@ -20,6 +20,7 @@ body{
 #date {
   font-size: 18px;
   margin-top: 8px;
+  font-family: 'Playfair Display', serif;
 }
 
 #greeting {
