@@ -13,3 +13,16 @@ body{
     background: #1a1a2e;
     color: white;
 }
+#clock {
+  font-size: 72px;
+}
+
+#date {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+#greeting {
+  font-size: 22px;
+  margin-top: 12px;
+}
