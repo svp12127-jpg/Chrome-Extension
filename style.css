@@ -13,6 +13,13 @@ body{
     padding: 2rem;
     background: linear-gradient(160deg, #0a0a0f 0%, #1a0533 30%, #5b1a7a 60%, #a0256e 80%, #d63384 100%);
 }
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 #clock {
   font-size: 72px;
 }
