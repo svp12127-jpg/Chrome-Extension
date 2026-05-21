@@ -1,7 +1,8 @@
 function clock(){
     const now = new Date()
-    now.getHours()
-    now.getMinutes()
+    let hrs=now.getHours()
+    let mins=now.getMinutes()
+    document.getElementById("clock").textContent = '${hrs}:${mins}'
 }
-setInterval(clock, 1000) // runs every 1000ms = 1 second
-clock() // run once immediately
+setInterval(clock, 1000)
+clock()
