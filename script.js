@@ -30,3 +30,32 @@ function greeting(){
     }
 }
 greeting()
+const quotes = [
+    "A negative mind will never giv you a positive life.",
+    "Forget the mistake. Remember the lesson.",
+    "Push yourself, because no one else is going to do it for you.",
+    "If it doesn't challenge you, it won't change you.",
+    "Be silly. Be fun. Be different. Be crazy. Be you, because life is too short to be anything but happy.",
+    "PRACTICE like you've never won. PERFORM like you've never lost.",
+    "Girl, get up. NOBODY is gonna do it for you.",
+    "I will not be another flower, picked for me beauty and left to die. I will be wild, difficult to find, and impossible to forget.",
+    "It's you VS you",
+    "If you don't sacrifice for what you want, what you want becomes the sacrifice.",
+    "Daily reminder: you don't grow when you're comfortable",
+    "Discipline will take you places motivation can't",
+    "A lot will go wrong before everything goes right.",
+    "But we cannot simply sit and stare at our wounds forever",
+    "Do it for your future self.",
+    "Remember why you started",
+    "c'mon kid, this is your dream",
+    "There is a past version of you that is so proud of how far you have come.",
+    "remember the goal.",
+    "I will win, not immediately but definitely.",
+    "The one who falls and gets up is so much stronger than one who never fell.",
+    "Your only limit is your mind."
+]
+function quote(){
+     let random = Math.floor(Math.random() * quotes.length)
+    document.getElementById("quote").textContent = quotes[random]
+}
+quote()
