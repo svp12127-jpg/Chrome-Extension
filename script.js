@@ -31,14 +31,14 @@ function greeting(){
 }
 greeting()
 const quotes = [
-    "A negative mind will never giv you a positive life.",
+    "A negative mind will never give you a positive life.",
     "Forget the mistake. Remember the lesson.",
     "Push yourself, because no one else is going to do it for you.",
     "If it doesn't challenge you, it won't change you.",
     "Be silly. Be fun. Be different. Be crazy. Be you, because life is too short to be anything but happy.",
     "PRACTICE like you've never won. PERFORM like you've never lost.",
     "Girl, get up. NOBODY is gonna do it for you.",
-    "I will not be another flower, picked for me beauty and left to die. I will be wild, difficult to find, and impossible to forget.",
+    "I will not be another flower, picked for my beauty and left to die. I will be wild, difficult to find, and impossible to forget.",
     "It's you VS you",
     "If you don't sacrifice for what you want, what you want becomes the sacrifice.",
     "Daily reminder: you don't grow when you're comfortable",
