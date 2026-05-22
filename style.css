@@ -35,5 +35,11 @@ body{
   margin-top: 12px;
 }
 
- let random = Math.floor(Math.random() * quotes.length)
-    document.getElementById("quote").textContent = quotes[random
+#quote {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
