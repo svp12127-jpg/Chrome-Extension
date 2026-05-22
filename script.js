@@ -60,3 +60,6 @@ function quote(){
     document.getElementById("quote").textContent = quotes[index]
 }
 quote()
+const input = document.getElementById("todo-input")
+const add = document.getElementById("todo-add")
+const list = document.getElementById("todo-list")
