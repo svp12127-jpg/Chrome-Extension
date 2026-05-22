@@ -55,7 +55,8 @@ const quotes = [
     "Your only limit is your mind."
 ]
 function quote(){
-     let random = Math.floor(Math.random() * quotes.length)
-    document.getElementById("quote").textContent = quotes[random]
+    const day = new Date().getDate()
+    let index = day % quotes.length
+    document.getElementById("quote").textContent = quotes[index]
 }
 quote()
