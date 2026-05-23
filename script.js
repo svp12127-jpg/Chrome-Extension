@@ -19,7 +19,7 @@ function greeting(){
     if (hrs >= 5 && hrs < 12) {
         document.getElementById("greeting").textContent = "Good Morning!"
     }
-    else if(hrs<17){
+    else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
     }
     else if(hrs<22){
