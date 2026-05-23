@@ -63,3 +63,12 @@ quote()
 const input = document.getElementById("todo-input")
 const add = document.getElementById("todo-add")
 const list = document.getElementById("todo-list")
+function addTask() {
+    let text = input.value
+    if (text === "") return
+    let li = document.createElement("li")
+    li.textContent = text
+    list.appendChild(li)
+    input.value = ""
+}
+add.onclick = addTask
