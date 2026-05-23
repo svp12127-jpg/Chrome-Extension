@@ -1,6 +1,6 @@
 function clock(){
     const now = new Date()
-    let hrs=now.getHours()
+    let hrs = String(now.getHours()).padStart(2, '0')
     let mins = String(now.getMinutes()).padStart(2, '0')
     document.getElementById("clock").textContent = `${hrs}:${mins}`
 }
