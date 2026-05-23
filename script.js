@@ -66,8 +66,34 @@ const list = document.getElementById("todo-list")
 function addTask() {
     let text = input.value
     if (text === "") return
+
     let li = document.createElement("li")
-    li.textContent = text
+
+    let checkbox = document.createElement("input")
+    checkbox.type = "checkbox"
+    
+    let span = document.createElement("span")
+    span.textContent = text
+
+    let deleteBtn = document.createElement("button")
+    deleteBtn.textContent = "✕"
+    deleteBtn.onclick = function() {
+        list.removeChild(li)
+    }
+    
+    checkbox.onclick = function() {
+        if (checkbox.checked) {
+            span.style.textDecoration = "line-through"
+            span.style.opacity = "0.5"
+        } else {
+            span.style.textDecoration = "none"
+            span.style.opacity = "1"
+        }
+    }
+    
+    li.appendChild(checkbox)
+    li.appendChild(span)
+    li.appendChild(deleteBtn)
     list.appendChild(li)
     input.value = ""
 }
