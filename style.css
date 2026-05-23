@@ -57,7 +57,7 @@ body{
   border: none;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   padding: 4px 0;
   width: 80%;
   outline: none;
@@ -67,7 +67,7 @@ body{
   background: transparent;
   border: none;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
 }
