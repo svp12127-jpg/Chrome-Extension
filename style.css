@@ -25,13 +25,13 @@ body{
 }
 
 #date {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 8px;
   font-family: 'Playfair Display', serif;
 }
 
 #greeting {
-  font-size: 22px;
+  font-size: 32px;
   margin-top: 12px;
 }
 
@@ -41,15 +41,19 @@ body{
     font-weight: 600;
     opacity: 0.8;
     margin-top: 12px;
+    margin-bottom: 12px;
 }
 
+#hr{
+  margin: 16px 0;
+}
 #to-do {
     margin-top: 1rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 1rem 1.5rem;
-    width: 300px;
+    width: 400px;
 }
 
 #todo-input{
