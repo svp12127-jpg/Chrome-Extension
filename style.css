@@ -41,11 +41,11 @@ body{
     font-weight: 600;
     opacity: 0.8;
     margin-top: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 #hr{
-  margin: 16px 0;
+  margin: 20px 0;
 }
 #to-do {
     font-size: 18px;
