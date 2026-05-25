@@ -83,3 +83,7 @@ body{
     gap: 8px;
     padding: 6px 0;
 }
+
+#todo-input::placeholder {
+    color: rgba(255,255,255,0.4);
+}
