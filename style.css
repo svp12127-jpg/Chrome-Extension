@@ -87,3 +87,7 @@ body{
 #todo-input::placeholder {
     color: rgba(255,255,255,0.4);
 }
+
+#weather, #countdown, #calendar {
+    display: none;
+}
