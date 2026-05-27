@@ -101,7 +101,7 @@ add.onclick = addTask
 
 function countdown(){
     let name=document.getElementById("event-name").value
-    let date = new Date(document.getElementById("event-date").value)
+    let date = document.getElementById("event-date").value
 
     if (name === "" || date === "") {
         document.getElementById("countdown-display").textContent = "Nothing coming up!"
