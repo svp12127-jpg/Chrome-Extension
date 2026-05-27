@@ -108,7 +108,7 @@ function countdown(){
         return
     }
 
-    let eventDate = new Date(date)
+    let eventDate = new Date(date+"T00:00:00")
     let today = new Date()
     let days = Math.ceil((date - today) / (1000 * 60 * 60 * 24))
      if (days > 0) {
