@@ -98,3 +98,23 @@ function addTask() {
     input.value = ""
 }
 add.onclick = addTask
+
+function countdown(){
+    let n=document.getElementById("event-name").value
+    let date = new Date(document.getElementById("date").value)
+
+    if (name === "" || date === "") {
+        document.getElementById("countdown-display").textContent = "Nothing coming up!"
+        return
+    }
+
+    let eventDate = new Date(date)
+    let today = new Date()
+    let days = Math.ceil((date - today) / (1000 * 60 * 60 * 24))
+     if (days > 0) {
+        document.getElementById("display").textContent = `📅 ${name} in ${days} days`
+    } else {
+        document.getElementById("display").textContent = "Nothing coming up!"
+    }
+}
+document.getElementById("event-set").onclick = countdown
