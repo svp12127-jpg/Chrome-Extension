@@ -96,3 +96,13 @@ body{
 body{
   justify-content: flex-start;
 }
+
+#countdown {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    width: 400px;
+    margin-bottom: 1rem;
+}
