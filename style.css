@@ -33,6 +33,7 @@ body{
 #greeting {
   font-size: 30px;
   margin-top: 12px;
+  white-space: nowrap;
 }
 
 #quote {
