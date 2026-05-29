@@ -110,7 +110,7 @@ function countdown(){
 
     let eventDate = new Date(date+"T00:00:00")
     let today = new Date()
-    let days = Math.ceil((date - today) / (1000 * 60 * 60 * 24))
+    let days = Math.ceil((eventDate - today) / (1000 * 60 * 60 * 24))
      if (days > 0) {
         document.getElementById("countdown-display").textContent = `📅 ${name} in ${days} days`
     } else {
