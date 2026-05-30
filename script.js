@@ -23,7 +23,7 @@ function greeting(){
     }
     else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
-        document.body.style.background = "linear-gradient(160deg, #050508 0%, #0d0820 50%, #1a0533 100%)"
+        document.body.style.background = "linear-gradient(160deg, #7b4fa6 0%, #c2527a 50%, #e8956d 100%)"
         document.body.style.color = "#1a0533"
     }
     else if(hrs<22){
