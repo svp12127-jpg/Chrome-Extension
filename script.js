@@ -20,21 +20,25 @@ function greeting(){
         document.getElementById("greeting").textContent = "Good Morning!"
         document.body.style.background = "linear-gradient(160deg, #c9b8e8 0%, #e8b4d0 50%, #f7c5b0 100%)"
         document.body.style.color = "#1a0533"
+        document.querySelector("hr").style.borderTopColor = "rgba(0,0,0,0.2)"
     }
     else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
         document.body.style.background = "linear-gradient(160deg, #7b4fa6 0%, #c2527a 50%, #e8956d 100%)"
         document.body.style.color = "#1a0533"
+        document.querySelector("hr").style.borderTopColor = "rgba(0,0,0,0.2)"
     }
     else if(hrs<22){
         document.getElementById("greeting").textContent = "Good Evening!"
         document.body.style.background = "linear-gradient(160deg, #0a0a0f 0%, #1a0533 30%, #5b1a7a 60%, #a0256e 80%, #d63384 100%)"
         document.body.style.color = "white"
+        document.querySelector("hr").style.borderTopColor = "rgba(255,255,255,0.2)"
     }
     else{
         document.getElementById("greeting").textContent = "Good Night!"
         document.body.style.background = "linear-gradient(160deg, #0a0a0f 0%, #0d0d1a 50%, #1a0533 100%)"
         document.body.style.color = "white"
+        document.querySelector("hr").style.borderTopColor = "rgba(255,255,255,0.2)"
     }
 }
 greeting()
