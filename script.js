@@ -22,6 +22,7 @@ function greeting(){
         document.body.style.color = "#1a0533"
         document.querySelector("hr").style.borderTopColor = "rgba(0,0,0,0.2)"
         document.getElementById("todo-input").style.color = "rgba(0,0,0,0.6)"
+        document.getElementById("todo-input").classList.add("light-input")
     }
     else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
@@ -29,6 +30,7 @@ function greeting(){
         document.body.style.color = "#1a0533"
         document.querySelector("hr").style.borderTopColor = "rgba(0,0,0,0.2)"
         document.getElementById("todo-input").style.color = "rgba(0,0,0,0.6)"
+        document.getElementById("todo-input").classList.add("light-input")
     }
     else if(hrs<22){
         document.getElementById("greeting").textContent = "Good Evening!"
@@ -36,6 +38,7 @@ function greeting(){
         document.body.style.color = "white"
         document.querySelector("hr").style.borderTopColor = "rgba(255,255,255,0.2)"
         document.getElementById("todo-input").style.color = "white"
+        document.getElementById("todo-input").classList.remove("light-input")
     }
     else{
         document.getElementById("greeting").textContent = "Good Night!"
@@ -43,6 +46,7 @@ function greeting(){
         document.body.style.color = "white"
         document.querySelector("hr").style.borderTopColor = "rgba(255,255,255,0.2)"
         document.getElementById("todo-input").style.color = "white"
+        document.getElementById("todo-input").classList.remove("light-input")
     }
 }
 greeting()
