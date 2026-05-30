@@ -1,6 +1,6 @@
 *{
   margin:0;
-  padding:0;
+  padding:2.5rem 3rem 2.5rem 3.5rem;
   box-sizing: border-box;
 }
 body{
@@ -46,7 +46,10 @@ body{
 }
 
 #hr{
-  margin: 20px 0;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 4px;
+  width: 100%;
 }
 #to-do {
   font-size: 18px;
