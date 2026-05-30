@@ -16,14 +16,14 @@ date()
 function greeting(){
     const now = new Date()
     let hrs=now.getHours()
-    if (hrs >= 5 && hrs < 14) {
+    if (hrs >= 5 && hrs < 12) {
         document.getElementById("greeting").textContent = "Good Morning!"
         document.body.style.background = "linear-gradient(160deg, #f9d29d 0%, #ffd89b 50%, #ff9a8b 100%)"
         document.body.style.color = "#1a0533"
     }
     else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
-        document.body.style.background = "linear-gradient(160deg, #2193b0 0%, #6dd5ed 50%, #a8edea 100%)"
+        document.body.style.background = "linear-gradient(160deg, #0a0a0f 0%, #1a0533 30%, #5b1a7a 60%, #a0256e 80%, #d63384 100%)"
         document.body.style.color = "#1a0533"
     }
     else if(hrs<22){
