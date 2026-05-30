@@ -34,12 +34,14 @@ function greeting(){
         document.getElementById("greeting").textContent = "Good Evening!"
         document.body.style.background = "linear-gradient(160deg, #0a0a0f 0%, #1a0533 30%, #5b1a7a 60%, #a0256e 80%, #d63384 100%)"
         document.body.style.color = "white"
+        document.querySelector("hr").style.borderTopColor = "rgba(255,255,255,0.2)"
         document.getElementById("todo-input").style.color = "white"
     }
     else{
         document.getElementById("greeting").textContent = "Good Night!"
         document.body.style.background = "linear-gradient(160deg, #0a0a0f 0%, #0d0d1a 50%, #1a0533 100%)"
         document.body.style.color = "white"
+        document.querySelector("hr").style.borderTopColor = "rgba(255,255,255,0.2)"
         document.getElementById("todo-input").style.color = "white"
     }
 }
