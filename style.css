@@ -122,3 +122,7 @@ body{
 #countdown-display {
   margin-top: 8px;
 }
+
+.light-input::placeholder {
+  color: rgba(0,0,0,0.35);
+}
