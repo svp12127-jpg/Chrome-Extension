@@ -49,7 +49,6 @@ function greeting(){
         document.getElementById("todo-input").classList.remove("light-input")
     }
 }
-greeting()
 const quotes = [
     "A negative mind will never give you a positive life.",
     "Forget the mistake. Remember the lesson.",
@@ -138,3 +137,4 @@ function countdown(){
     }
 }
 document.getElementById("event-set").onclick = countdown
+greeting()
