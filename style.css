@@ -61,7 +61,7 @@ body{
 
 hr{
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid tranparent;
   margin-top: 4px;
   width: 100%;
 }
