@@ -65,6 +65,7 @@ hr{
   margin-top: 4px;
   width: 100%;
 }
+
 #to-do {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
