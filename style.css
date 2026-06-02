@@ -60,8 +60,8 @@ body{
 }
 
 hr{
-  border: none;
-  border-top: 1px solid tranparent;
+  border: none !important;
+  border-top: 1px solid tranparent !important;
   margin-top: 4px;
   width: 100%;
 }
