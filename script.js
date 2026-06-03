@@ -146,6 +146,8 @@ function countdown(){
     } else {
         document.getElementById("countdown-display").textContent = "Nothing coming up!"
     }
+    localStorage.setItem("eventName", name)
+    localStorage.setItem("eventDate", date)
 }
 document.getElementById("event-set").onclick = countdown
 greeting()
@@ -158,3 +160,14 @@ function loadTodos() {
     })
 }
 loadTodos()
+
+function loadcountdown(){
+    let name=localStorage.getItem("eventName")
+    let date=localStorage.getItem("eventDate")
+    if(name&&date){
+        document.getElementById("event-name").value=name
+        document.getElementById("event-date").value=date
+        countdown()
+    }
+}
+loadcountdown()
