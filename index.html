@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>New Tab</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="top-bar">
+            <div id="left">
+                <div id="clock"></div>
+                <div id="date"></div>
+                <div id="quote"></div>
+                <div id="divider"></div>
+            </div>
+            <div id="right">
+                <div id="greeting"></div>
+            </div>
+        </div>
+
+        <div id="countdown">
+            <p id="countdown-header">COUNTDOWN</p>
+            <input type="text" id="event-name" placeholder="Event name...">
+            <input type="date" id="event-date">
+            <button id="event-set">Set</button>
+            <p id="countdown-display">Nothing coming up!</p>
+        </div>
+
+        <div id="weather"></div>
+        <div id="calendar"></div>
+        <div id="to-do">
+            <p id="todo-header">TO-DO</p>
+            <input type="text" id="todo-input" placeholder="Add a task...">
+            <button id="todo-add">+</button>
+            <ul id="todo-list"></ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
