@@ -162,8 +162,6 @@ function loadTodos() {
 loadTodos()
 
 function loadcountdown(){
-    document.getElementById("event-name").value = ""
-    document.getElementById("event-date").value = ""
     let name=localStorage.getItem("eventName")
     let date=localStorage.getItem("eventDate")
     if(name&&date){
