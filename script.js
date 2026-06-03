@@ -82,6 +82,15 @@ quote()
 const input = document.getElementById("todo-input")
 const add = document.getElementById("todo-add")
 const list = document.getElementById("todo-list")
+
+function savetodo(){
+    let tasks=[]
+    document.querySelectorAll("#todo-list li span").forEach(span => {
+        tasks.push(span.textContent)
+    })
+    localStorage.setItem("todos", JSON.stringify(tasks))
+}
+
 function addTask() {
     let text = input.value
     if (text === "") return
@@ -98,6 +107,7 @@ function addTask() {
     deleteBtn.textContent = "✕"
     deleteBtn.onclick = function() {
         list.removeChild(li)
+        savetodo()
     }
     
     checkbox.onclick = function() {
@@ -115,6 +125,7 @@ function addTask() {
     li.appendChild(deleteBtn)
     list.appendChild(li)
     input.value = ""
+    savetodo()
 }
 add.onclick = addTask
 
@@ -138,3 +149,12 @@ function countdown(){
 }
 document.getElementById("event-set").onclick = countdown
 greeting()
+
+function loadTodos() {
+    let saved = JSON.parse(localStorage.getItem("todos") || "[]")
+    saved.forEach(text => {
+        input.value = text
+        addTask()
+    })
+}
+loadTodos()
