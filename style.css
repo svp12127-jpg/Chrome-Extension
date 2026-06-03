@@ -59,9 +59,9 @@ body{
   line-height: 1.5;
 }
 
-hr{
-  border: none !important;
-  border-top: 1px solid tranparent !important;
+#divider {
+  height: 1px;
+  background-color: rgba(255,255,255,0.2);
   margin-top: 4px;
   width: 100%;
 }
