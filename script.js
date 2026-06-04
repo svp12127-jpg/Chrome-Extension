@@ -182,18 +182,27 @@ function weather(){
             const feel=Math.round(data.main.feels_like)
             const d = data.weather[0].description
             const icon = data.weather[0].icon
+            let emoji = "🌡️"
+            if (id >= 200 && id < 300) emoji = "⛈️"
+            else if (id >= 300 && id < 400) emoji = "🌦️"
+            else if (id >= 500 && id < 600) emoji = "🌧️"
+            else if (id >= 600 && id < 700) emoji = "❄️"
+            else if (id >= 700 && id < 800) emoji = "🌫️"
+            else if (id === 800) emoji = "☀️"
+            else if (id > 800) emoji = "⛅"
+
             document.getElementById("weather").innerHTML = `
-                <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${d}">
+                <div id="weather-emoji">${emoji}</div>
                 <div id="weather-info">
                     <p id="weather-temp">${temp}°C</p>
                     <p id="weather-desc">${d}</p>
                     <p id="weather-feels">Feels like ${feel}°C</p>
-                    <p id="weather-city">${city}</p>
+                    <p id="weather-city">Delhi</p>
                 </div>
             `
         })
         .catch(() => {
             document.getElementById("weather").textContent = "Weather unavailable"
         })
-}
+    }
 weather()
