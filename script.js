@@ -182,6 +182,7 @@ function weather(){
             const feel=Math.round(data.main.feels_like)
             const d = data.weather[0].description
             const icon = data.weather[0].icon
+            const id = data.weather[0].id
             let emoji = "🌡️"
             if (id >= 200 && id < 300) emoji = "⛈️"
             else if (id >= 300 && id < 400) emoji = "🌦️"
