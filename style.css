@@ -224,9 +224,9 @@ body{
   gap: 8px;
 }
 
-#weather img{
-  width: 60px;
-  height: 60px;
+#weather-emoji{
+  font-size: 48px;
+  line-height: 1;
 }
 
 #weather-temp{
