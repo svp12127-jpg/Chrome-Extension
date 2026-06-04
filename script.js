@@ -175,7 +175,7 @@ loadcountdown()
 function weather(){
     const apikey="82cabb3a67324e80b3ff607bcfdce5c4"
     const city="Delhi"
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`)
         .then(res => res.json())
         .then(data => {
             const temp=Math.round(data.main.temp)
@@ -183,11 +183,11 @@ function weather(){
             const d = data.weather[0].description
             const icon = data.weather[0].icon
             document.getElementById("weather").innerHTML = `
-                <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}">
+                <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${d}">
                 <div id="weather-info">
                     <p id="weather-temp">${temp}°C</p>
-                    <p id="weather-desc">${desc}</p>
-                    <p id="weather-feels">Feels like ${feels}°C</p>
+                    <p id="weather-desc">${d}</p>
+                    <p id="weather-feels">Feels like ${feel}°C</p>
                     <p id="weather-city">${city}</p>
                 </div>
             `
