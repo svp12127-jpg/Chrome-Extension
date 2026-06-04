@@ -244,3 +244,8 @@ body{
   font-size: 13px;
   opacity: 0.6
 }
+
+#weather-city{
+  font-size: 13px;
+  opacity: 0.6;
+}
