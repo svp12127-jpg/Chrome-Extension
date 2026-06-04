@@ -25,6 +25,7 @@ body{
 #left {
   flex: 1;
   margin-right: 2rem;
+  min-width: 0;
 }
 
 #right {
@@ -227,30 +228,30 @@ body{
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 0.8rem 1.2rem;
-  width: 220px;
+  width: 360px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 #weather-emoji{
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1;
 }
 
 #weather-temp{
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
 }
 
 #weather-desc{
-  font-size: 13px;
+  font-size: 15px;
   opacity: 0.8;
   text-transform: capitalize;
 }
 
 #weather-feels{
-  font-size: 12px;
+  font-size: 13px;
   opacity: 0.6
 }
 
