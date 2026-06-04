@@ -223,3 +223,24 @@ body{
   align-items: center;
   gap: 8px;
 }
+
+#weather img{
+  width: 60px;
+  height: 60px;
+}
+
+#weather-temp{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#weather-desc{
+  font-size: 15px;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+#weather-feels{
+  font-size: 13px;
+  opacity: 0.6
+}
