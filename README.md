@@ -58,5 +58,3 @@ Start, pause, and reset. Sends a notification when the timer is up.
 
 ## About
 This is my first Chrome extension, while learning web development. It started as a simple clock and grew into a full personal dashboard. Every feature was built and debugged step by step — definitely learned a lot along the way!
-
----
