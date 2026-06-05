@@ -192,7 +192,7 @@ function weather(){
             else if (id === 800) emoji = "☀️"
             else if (id > 800) emoji = "⛅"
 
-            fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=28.6139&lon=77.2090&appid=${apiKey}`)
+            fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=28.6139&lon=77.2090&appid=${apikey}`)
                 .then(res => res.json())
                 .then(aqiData => {
                     const aqiValue = aqiData.list[0].main.aqi
