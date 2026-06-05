@@ -211,6 +211,7 @@ function weather(){
                 </div>
             `
         })
+    })
         .catch(() => {
             document.getElementById("weather").textContent = "Weather unavailable"
         })
