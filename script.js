@@ -212,8 +212,9 @@ function weather(){
             `
         })
     })
-        .catch(() => {
-            document.getElementById("weather").textContent = "Weather unavailable"
-        })
+        .catch((err) => {
+    document.getElementById("weather").textContent = "Weather unavailable"
+    console.log(err)
+})
     }
 weather()
