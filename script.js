@@ -192,14 +192,6 @@ function weather(){
             else if (id === 800) emoji = "☀️"
             else if (id > 800) emoji = "⛅"
 
-            fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=28.6139&lon=77.2090&appid=${apikey}`)
-                .then(res => res.json())
-                .then(aqiData => {
-                    const aqiValue = aqiData.list[0].main.aqi
-                    const pm25 = Math.round(aqiData.list[0].components.pm2_5)
-                    const labels = ["", "Good", "Fair", "Moderate", "Poor", "Very Poor"]
-                    const emojis = ["", "🟢", "🟡", "🟠", "🔴", "🟣"]
-
             document.getElementById("weather").innerHTML = `
                 <div id="weather-emoji">${emoji}</div>
                 <div id="weather-info">
@@ -207,14 +199,11 @@ function weather(){
                     <p id="weather-desc">${d}</p>
                     <p id="weather-feels">Feels like ${feel}°C</p>
                     <p id="weather-city">Delhi</p>
-                    <p id="aqi-display">AQI: ${aqiValue} - ${labels[aqiValue]} ${emojis[aqiValue]} | PM2.5: ${pm25}</p>
                 </div>
             `
         })
-    })
-        .catch((err) => {
-    document.getElementById("weather").textContent = "Weather unavailable"
-    console.log(err)
-})
+        .catch(() => {
+            document.getElementById("weather").textContent = "Weather unavailable"
+        })
     }
 weather()
