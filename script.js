@@ -18,8 +18,8 @@ function greeting(){
     let hrs=21
     if (hrs >= 5 && hrs < 12) {
         document.getElementById("greeting").textContent = "Good Morning!"
-        document.body.style.background = "linear-gradient(160deg, #c9b8e8 0%, #e8b4d0 50%, #f7c5b0 100%)"
-        document.body.style.color = "#1a0533"
+        document.body.style.background = "linear-gradient(160deg, #f7e8c0 0%, #f5c87a 40%, #f0a05a 80%, #e8826e 100%)"
+        document.body.style.color = "#3d1f00"
         document.getElementById("divider").style.backgroundColor = "rgba(0,0,0,0.2)"
         document.getElementById("todo-input").style.color = "rgba(0,0,0,0.6)"
         document.getElementById("todo-input").classList.add("light-input")
