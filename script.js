@@ -29,6 +29,8 @@ function greeting(){
         document.querySelectorAll("#countdown input").forEach(i => {
             i.style.color = "rgba(0,0,0,0.7)"
         })
+        document.getElementById("event-set").style.color = "rgba(0,0,0,0.7)"
+        document.getElementById("event-set").style.borderColor = "rgba(0,0,0,0.2)"
     }
     else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
