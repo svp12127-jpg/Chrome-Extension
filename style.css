@@ -33,7 +33,8 @@ body{
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
-    min-width: 220px;
+    width: 380px;
+    flex-shrink: 0px;
 }
 
 #clock {
@@ -261,7 +262,7 @@ body{
 }
 
 #pomodoro{
-  background: rgna(255,255,255,0.1);
+  background: rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 1.4rem 1.8rem;
