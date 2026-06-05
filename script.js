@@ -24,8 +24,11 @@ function greeting(){
         document.getElementById("todo-input").style.color = "rgba(0,0,0,0.6)"
         document.getElementById("todo-input").classList.add("light-input")
         document.querySelectorAll("#countdown, #to-do, #weather, #pomodoro").forEach(w => {
-        w.style.background = "rgba(255,255,255,0.25)"
-})
+            w.style.background = "rgba(255,255,255,0.25)"
+        })
+        document.querySelectorAll("#countdown input").forEach(i => {
+            i.style.color = "rgba(0,0,0,0.7)"
+        })
     }
     else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
