@@ -251,6 +251,16 @@ document.getElementById("reset-btn").onclick = function() {
     clearInterval(interval)
     running = false
     document.getElementById("start-btn").textContent = "▶ Start"
+    const activeMode = document.querySelector(".mode-btn.active").id
+    if (activeMode === "focus-btn"){
+        left = modes.focus
+    }
+    else if (activeMode === "short-btn"){
+        left = modes.short
+    }
+    else{
+        left = modes.long
+    }
     update()
 }
 
