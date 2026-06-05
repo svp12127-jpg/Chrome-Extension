@@ -15,7 +15,7 @@ function date(){
 date()
 function greeting(){
     const now = new Date()
-    let hrs=19
+    let hrs=23
     if (hrs >= 5 && hrs < 12) {
         document.getElementById("greeting").textContent = "Good Morning!"
         document.body.style.background = "linear-gradient(160deg, #f7e8c0 0%, #f5c87a 40%, #f0a05a 80%, #e8826e 100%)"
