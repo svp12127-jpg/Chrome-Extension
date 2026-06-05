@@ -271,6 +271,12 @@ document.querySelectorAll(".mode-btn").forEach(btn => {
         clearInterval(interval)
         running= false
         document.getElementById("start-btn").textContent = "▶ Start"
+            chrome.notifications.create({
+            type: "basic",
+            iconUrl: "icon.png",
+            title: "Pomodoro",
+            message: "Time's up!"
+        })
         if (this.id === "focus-btn"){
             left = modes.focus
         }
