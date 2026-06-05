@@ -207,3 +207,69 @@ function weather(){
         })
     }
 weather()
+
+let interval=null
+let left=25*60
+let running=false
+
+const modes={
+    focus:25*60,
+    short:5*60,
+    long:15*60
+}
+
+function update(){
+    const mins = Math.floor(left / 60)
+    const secs = left % 60
+    document.getElementById("time").textContent = 
+        `${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`
+}
+
+document.getElementById("start-btn").onclick = function() {
+    if(running){
+        clearInterval(interval)
+        running=false;
+        this.textContent = "▶ Start"
+    }
+    else{
+        running=true
+        this.textContent = "⏸ Pause"
+        interval=setInterval(() => {
+            if (left > 0) {
+                left--
+                update()
+            } else {
+                clearInterval(interval)
+                running = false
+                document.getElementById("start-btn").textContent = "▶ Start"
+            }
+        }, 1000)
+    }
+}
+
+document.getElementById("reset-btn").onclick = function() {
+    clearInterval(interval)
+    running = false
+    document.getElementById("start-btn").textContent = "▶ Start"
+    update()
+}
+
+document.querySelectorAll(".mode-btn").forEach(btn => {
+    btn.onclick = function() {
+        document.querySelectorAll(".mode-btn").forEach(b => b.classList.remove("active"))
+        this.classList.add("active")
+        clearInterval(interval)
+        running= false
+        document.getElementById("start-btn").textContent = "▶ Start"
+        if (this.id === "focus-btn"){
+            left = modes.focus
+        }
+        else if (this.id === "short-btn"){
+            left = modes.short
+        }
+        else{
+            left = modes.long
+        }
+        update()
+    }
+})
