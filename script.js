@@ -20,9 +20,12 @@ function greeting(){
         document.getElementById("greeting").textContent = "Good Morning!"
         document.body.style.background = "linear-gradient(160deg, #f7e8c0 0%, #f5c87a 40%, #f0a05a 80%, #e8826e 100%)"
         document.body.style.color = "#3d1f00"
-        document.getElementById("divider").style.backgroundColor = "rgba(0,0,0,0.2)"
+        document.getElementById("divider").style.backgroundColor = "rgba(0,0,0,0.15)"
         document.getElementById("todo-input").style.color = "rgba(0,0,0,0.6)"
         document.getElementById("todo-input").classList.add("light-input")
+        document.querySelectorAll("#countdown, #to-do, #weather, #pomodoro").forEach(w => {
+        w.style.background = "rgba(255,255,255,0.25)"
+})
     }
     else if(hrs>=12 && hrs<17){
         document.getElementById("greeting").textContent = "Good Afternoon!"
